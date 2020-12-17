@@ -1,0 +1,321 @@
+/* Estilos gerais e resets */
+
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header */
+
+header {
+    background-color: #333399;
+}
+
+.menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.375em;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #fff;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+/* Capa */
+.capa {
+    background: url(../img/capa.jfif) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px;
+}
+
+.capa h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+}
+
+/* Nossa Missão */
+.nossa-missao {
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.missao-titulo {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2em;
+    color: #333399;
+}
+
+.missao-img {
+    max-width: 480px;
+    max-height: 300px;
+}
+
+.descricao {
+    max-width: 300px;
+    margin: 40px auto;
+    font-style: italic;
+    color: #333399;
+    text-align: justify;
+}
+
+.nossa-missao h2 {
+    color: #fff;
+    background: #333399;
+    padding: 10px;
+    max-width: 280px;
+    position: relative;
+    top: -25px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Planos */
+
+.planos {
+    background: #3399FF;
+    color: #fff;
+    padding: 80px 0;
+    border-top: 3px solid #3366CC;
+    border-bottom: 3px solid #3366CC;
+}
+
+.planos-titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.planos-container {
+    justify-content: space-between; 
+}
+
+.planos-item {
+    border: 3px solid #3366CC;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px 15px 0 15px;
+}
+
+.planos-item h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.planos-item p {
+    padding: 5px;
+    font-size: 1.125em;
+    border-bottom: 1px solid #3366CC;
+}
+
+.planos-item p::before {
+    content: '✓';
+    position: relative;
+    right: 5px;
+}
+
+.botao-planos {
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 10px 0;
+    width: 180px;
+    display: block;
+    margin: 50px auto 50px auto;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-planos:hover {
+    color: #3399FF;
+    background: #fff;
+}
+
+/* Locais */
+.locais {
+    padding: 80px;
+}
+
+.locais-titulo {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #333399;
+    font-size: 2em;
+}
+
+.locais-item-img {
+    display: block;
+    max-width: 100%;
+    width: 460px;
+    height: auto;
+}
+
+.locais-item {
+    display: flex;
+}
+
+.locais-item div {
+    margin: 15px;
+}
+
+.locais-item h2 {
+    color: #333399;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.locais-item p {
+    font-style: italic;
+    color: #333399;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.locais-botao {
+    border: 3px solid #333399;
+    color: #333399;
+    padding: 10px 0;
+    width: 180px;
+    display: block;
+    margin: 20px 0 50px 0;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.locais-botao:hover {
+    border: 3px solid #333399;
+    color: #fff;
+    background: #333399;
+}
+
+/* Contato */
+
+.contato {
+    background: #3399FF;
+    padding: 50px;
+    color: #fff;
+}
+
+.contato h2 {
+    font-size: 2em;
+}
+
+.contato p {
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+.contato-info {
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    width: 180px;
+    height: 50px;
+    border: 2px solid #333399;
+    margin-right: 2px;
+    background: none;
+	font-size: 1.125em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+.botao-enviar {
+    border: 3px solid #333399;
+    background: #333399;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.botao-enviar:hover {
+    background: #fff;
+    color: #333399;
+}
+
+/* footer */
+
+footer {
+    background: #3366CC;
+    padding: 50px 0;
+}
+
+.footer-container {
+    justify-content: space-between;
+}
+
+.footer-container p {
+    color: #fff;
+    font-size: 1.125em;
+    font-style: italic;
+    text-align: center;
+}
+
+.contato-pessoal a {
+    color: #fff;
+    font-size: 1.125em;
+    line-height: 1.5;
+    display: flex;
+}
